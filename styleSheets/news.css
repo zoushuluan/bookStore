@@ -1,0 +1,33 @@
+/*
+    Shuluan Zou
+    04/26/2023
+*/
+
+.blogImg {
+    width: 100%;    
+}
+h2 {
+    position: absolute;
+    bottom: 50%;
+    left: 45%;
+    color: rgb(207, 92, 92);
+    font-size: 1.5rem;
+    width: 50%;
+}
+article {
+    width: 30%;
+    padding: 3rem;
+    margin: 1rem;   
+}
+.articleContainer {
+    display: flex;
+    justify-self: center;
+    flex-wrap: wrap;
+}
+
+
+@media only screen and (max-width: 640px) {
+        article {
+            width: 100%;
+        }
+}

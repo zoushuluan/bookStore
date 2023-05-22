@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<!--
+    Author: Shuluan Zou
+    Date: 04/26/2023
+-->
+<html lang="en">
+    <head>
+        <title>Shuluan Used Bookstore</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="images/icon.png">
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <link rel="stylesheet" href="stylesheets/joinUs.css">
+
+    </head>
+
+    <body>
+        <header>
+            <img src="images/logo.png" alt="logo">
+            <h1>Shuluan Used Bookstore</h1>
+            <nav>
+                <a href="index.html">Home</a> 
+                <a href="joinUs.html">Book Club</a> 
+                <a href="news.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav> 
+        </header>
+        <main>
+            <div class="registration">
+                <h1>Club Membership Registration</h1><br>
+                <p>Complete the form below to sign up for our membership service.</p>
+            </div>
+            <form action="http://itins3.madisoncollege.edu/echo.php" method="post" class="form">
+                 <div class="formText">              
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="First Name" required class="inputText"> 
+
+                    <label for="lastName">Last Name</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Last Name" required class="inputText"><br>
+                </div>
+
+                <div class="formText">
+                    <label for="emailInput">Email</label>
+                    <input type="text" name="email" id="emailInput" class="inputButton" placeholder="Email" required>
+
+                    <label for="phone">Phone</label>
+                    <input type="text" name="phone" id="phone" class="inputButton" placeholder="Your Phone"> 
+                </div><br>  
+                
+                <label for="gender">Gender</label>
+                <select name="gender" id="gender">
+                    <option value="female">Female</option>
+                    <option value="Male">male</option>
+                </select>
+
+                <fieldset>
+                    <legend>Where did you hear about us?</legend>
+                    
+                    <label for="friends"><input type="checkbox" name="friends" id="friends" value="friends">Friends</label><br>                  
+                    <label for="google"><input type="checkbox" name="google" id="google" value="google">Google</label><br>  
+                    <label for="news"><input type="checkbox" name="news" id="news" value="news">News</label><br> 
+                    <label for="socialMedia"><input type="checkbox" name="socialMedia" id="socialMedia" value="socialMedia">Social Media</label><br>                 
+                    <label for="other"><input type="checkbox" name="other" id="other" value="other">Other</label><br>
+                </fieldset>
+                <fieldset>
+                    <legend>Membership Type</legend>
+                    <input type="radio" name="membershipType" id="standard" value="standard">
+                    <label for="standard">Standard</label><br>
+                    <input type="radio" name="membershipType" id="premiun" value="premiun">
+                    <label for="premiun">Premiun</label><br>
+                    <input type="radio" name="membershipType" id="ultimate" value="ultimate">
+                    <label for="ultimate">Ultimate</label>
+                </fieldset>
+                <p>Once you submit your application, we will contact you shortly to complete your membership application. Thank you!</p><br>
+                <div class="inputButton">
+                    <input type="submit" value="Send" id="send">
+                    <input type="reset" value="Reset">
+                </div>
+            </form>
+
+            <div>
+                <img src="images/join-bg.jpeg" alt="joinUs" id="joinBg">
+                <h3>Check out our events</h3>
+                <table>
+                    <tr>
+                        <th>Events</th>
+                        <th>Info</th>
+                        <th>Date</th>
+                    </tr>
+                    <tr>
+                        <td>Coding with Alla</td>
+                        <td>learn how to coding</td>
+                        <td>12/03/2022</td>
+                    </tr>
+                    <tr>
+                        <td>Tiny Tots Storytime</td>
+                        <td>Ages 0-3</td>
+                        <td>03/03/2023</td>                       
+                    </tr>
+                    <tr>
+                        <td>Book Bunch & Lunch</td>
+                        <td>Violet & Jobie in the Wild</td>
+                        <td>04/01/2023</td>                       
+                    </tr>
+                    <tr>
+                        <td>Coding with Alla</td>
+                        <td>learn how to coding</td>
+                        <td>12/03/2022</td>                       
+                    </tr>
+                </table>
+            </div>
+        </main>
+
+        <footer>
+            <form name="subform" action="http://itins3.madisoncollege.edu/echo.php" method="post">
+                <input type="text" placeholder="Your email" name="email" id="email" class="input">    
+                <input type="submit" value="Subscrible Now!" class="subscrible">
+            </form>
+            <address>Developed by: <a href="mailto:szou@madisoncollege.edu">Shuluan Zou</a></address>
+            <cite>all books image copyright from Amazon</cite>
+        </footer>
+    </body>
+
+</html>

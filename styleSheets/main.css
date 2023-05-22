@@ -1,0 +1,95 @@
+/*
+    Shuluan Zou
+    04/26/2023
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header {
+    text-align: center;
+    background-color: #efe0e2;
+    width: 100%;
+}
+header img {
+    width: 200px;
+    height: 150px;
+}
+header h1 {
+    color: rgb(115, 98, 98);
+    font-weight: bold;
+    word-spacing: 0.5rem;
+    text-shadow: 2px 2px 4px rgb(211, 182, 182);
+    padding: 10px;
+}
+nav {
+    padding: 10px;
+    background-color: rgb(205, 120, 120);
+    width: 100%;
+}
+nav a {
+    text-decoration: none;
+    margin: 1rem;
+    padding: 5px;
+    font-size: 1.3rem;
+    color: rgb(99, 65, 65);
+}
+nav a:hover {
+    color: rgb(190, 59, 59);
+    font-weight: bold;
+}
+footer {
+    padding: 30px;
+    background-color: #efe0e2;
+    color: rgb(115, 98, 98);
+    margin-top: 20px;
+    text-align: center;
+}
+address{
+    padding: 20px;
+    text-align: right;
+}
+
+.input{
+    width: 300px;
+    border: none;
+    font-size: 1rem;
+    height: 2rem;
+}
+.subscrible {
+    width: 150px; 
+    background-color: rgb(205, 120, 120);
+    border: none;
+    font-size: 1rem;
+    height: 2rem;
+}
+input[type="submit"]:hover{background-color: rgb(163, 31, 31);}
+input[type="reset"]:hover {background-color: rgb(163, 31, 31);}
+#aboutBg {
+    width: 100%;
+    height: 200px;
+}
+.firstContainer {
+    position: relative;
+}
+
+
+
+@media only screen and (max-width: 640px) {
+    nav a {display: block;}
+    .newBooks {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .articleContainer {
+        display: flex;
+        justify-self: center;
+        flex-direction: column;
+    }
+
+}

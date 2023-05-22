@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+    Author: Shuluan Zou
+    Date: 04/26/2023
+-->
+<html lang="en">
+    <head>
+        <title>Shuluan Used Bookstore</title>
+        <meta charset="utf-8">
+        <link rel="icon" href="images/icon.png">
+        <link rel="stylesheet" href="stylesheets/main.css">
+        <link rel="stylesheet" href="stylesheets/contact.css">
+
+    </head>
+
+    <body>
+        <header>
+            <img src="images/logo.png" alt="logo">
+            <h1>Shuluan Used Bookstore</h1>
+            <nav>
+                <a href="index.html">Home</a> 
+                <a href="joinUs.html">Book Club</a> 
+                <a href="news.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav> 
+        </header>
+        <main>
+            <section class="firstContainer">
+                <img src="images/contact-bg.jpeg" alt="contact" id="aboutBg">
+                <h2>Contact Us</h2> 
+                <cite>&copy;Pixabay</cite>
+            </section>
+
+            <div class="secondContainer">
+                <div class="contact">
+                    <img src="images/phone.jpg" alt="phone" class="icon">
+                    <p>Phone:608 - 589 - 4589</p>
+                </div>
+                <div class="contact">
+                    <img src="images/email.png" alt="email" class="icon">
+                    <p>Email: szou@madisoncollege.edu</p>
+                </div>
+                <div class="contact">
+                    <img src="images/address.png" alt="address" class="icon">
+                    <p>Address: Madison.WI</p><br>
+                    <p>Hours: Mon-Fri 10:00am-6:00pm</p> 
+                </div>
+            </div>
+
+            <section class="formContainer">
+                <img src="images/contactForm.webp" alt="contactForm" id="contactForm">
+                <h3>Contact Form</h3><br>
+                <form action="http://itins3.madisoncollege.edu/echo.php" method="post" name="contactForm">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" class="inputButton" placeholder="Name" required>
+                   
+                        <label for="emailInput">Email</label>
+                        <input type="text" name="email" id="emailInput" class="inputButton" placeholder="Email" required>
+                    
+                        <label for="phone">Phone</label>
+                        <input type="text" name="phone" id="phone" class="inputButton" placeholder="phone">
+
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" placeholder="Leave a message"></textarea>
+                    <div class="button">
+                        <input type="submit" value="Send" class="formButton">
+                        <input type="reset" value="Clear" class="formButton">
+                    </div>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <form name="subform" action="http://itins3.madisoncollege.edu/echo.php" method="post">
+                <input type="text" placeholder="Your email" name="email" id="email" class="input">    
+                <input type="submit" value="Subscrible Now!" class="subscrible">
+            </form>
+            <address>Developed by: <a href="mailto:szou@madisoncollege.edu">Shuluan Zou</a></address>
+            <cite>all books copyright from Amazon</cite>
+        </footer>
+    </body>
+
+</html>
